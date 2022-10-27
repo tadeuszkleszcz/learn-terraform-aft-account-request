@@ -77,6 +77,7 @@ module "sandbox3" {
 
   custom_fields = {
     group = "non-prod"
+    date = "2022-10-27"
   }
 
   account_customizations_name = "sandbox"
