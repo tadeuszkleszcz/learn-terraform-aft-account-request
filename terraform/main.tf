@@ -62,7 +62,7 @@ module "sandbox3" {
     AccountName               = "sandbox3"
     ManagedOrganizationalUnit = "Learn AFT"
     SSOUserEmail              = "tadeuszkleszcz+sandbox3@gmail.com"
-    SSOUserFirstName          = "Sandbox"
+    SSOUserFirstName          = "Sandbox3"
     SSOUserLastName           = "AFT"
   }
 
@@ -80,5 +80,5 @@ module "sandbox3" {
     date = "2022-10-27"
   }
 
-  account_customizations_name = "sandbox"
+  account_customizations_name = "sandbox2"
 }
