@@ -1,68 +1,12 @@
-module "sandbox" {
+module "sandbox90" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
-    AccountEmail              = "tadeuszkleszcz+sandbox-aft@gmail.com"
-    AccountName               = "sandbox-aft"
+    AccountEmail              = "tadeuszkleszcz+sandbox90@gmail.com"
+    AccountName               = "sandbox90"
     ManagedOrganizationalUnit = "Learn AFT"
-    SSOUserEmail              = "tadeuszkleszcz+sandbox-aft@gmail.com"
-    SSOUserFirstName          = "Sandbox"
-    SSOUserLastName           = "AFT"
-  }
-
-  account_tags = {
-    "Learn Tutorial" = "AFT"
-  }
-
-  change_management_parameters = {
-    change_requested_by = "HashiCorp Learn"
-    change_reason       = "Learn AWS Control Tower Account Factory for Terraform"
-  }
-
-  custom_fields = {
-    group = "non-prod"
-  }
-
-  account_customizations_name = "sandbox"
-}
-
-module "sandbox2" {
-  source = "./modules/aft-account-request"
-
-  control_tower_parameters = {
-    AccountEmail              = "tadeuszkleszcz+sandbox2@gmail.com"
-    AccountName               = "sandbox2"
-    ManagedOrganizationalUnit = "Learn AFT"
-    SSOUserEmail              = "tadeuszkleszcz+sandbox2@gmail.com"
-    SSOUserFirstName          = "Sandbox"
-    SSOUserLastName           = "AFT"
-  }
-
-  account_tags = {
-    "Learn Tutorial" = "AFT"
-  }
-
-  change_management_parameters = {
-    change_requested_by = "HashiCorp Learn"
-    change_reason       = "Learn AWS Control Tower Account Factory for Terraform"
-  }
-
-  custom_fields = {
-    group = "non-prod"
-  }
-
-  account_customizations_name = "sandbox"
-}
-
-module "sandbox3" {
-  source = "./modules/aft-account-request"
-
-  control_tower_parameters = {
-    AccountEmail              = "tadeuszkleszcz+sandbox3@gmail.com"
-    AccountName               = "sandbox3"
-    ManagedOrganizationalUnit = "Learn AFT"
-    SSOUserEmail              = "tadeuszkleszcz+sandbox3@gmail.com"
-    SSOUserFirstName          = "Sandbox3"
+    SSOUserEmail              = "tadeuszkleszcz+sandbox90@gmail.com"
+    SSOUserFirstName          = "sandbox90"
     SSOUserLastName           = "AFT"
   }
 
@@ -80,5 +24,5 @@ module "sandbox3" {
     date = "2022-10-27"
   }
 
-  account_customizations_name = "sandbox2"
+  account_customizations_name = "sandbox"
 }
