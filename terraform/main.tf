@@ -1,32 +1,3 @@
-module "sandbox90" {
-  source = "./modules/aft-account-request"
-
-  control_tower_parameters = {
-    AccountEmail              = "tadeuszkleszcz+sandbox90@gmail.com"
-    AccountName               = "sandbox90"
-    ManagedOrganizationalUnit = "Learn AFT"
-    SSOUserEmail              = "tadeuszkleszcz+sandbox90@gmail.com"
-    SSOUserFirstName          = "sandbox90"
-    SSOUserLastName           = "AFT"
-  }
-
-  account_tags = {
-    "Learn Tutorial" = "AFT"
-  }
-
-  change_management_parameters = {
-    change_requested_by = "HashiCorp Learn"
-    change_reason       = "Learn AWS Control Tower Account Factory for Terraform"
-  }
-
-  custom_fields = {
-    group = "non-prod"
-    date = "2022-10-27"
-  }
-
-  account_customizations_name = "sandbox"
-}
-
 module "sandbox99" {
   source = "./modules/aft-account-request"
 
@@ -56,15 +27,15 @@ module "sandbox99" {
   account_customizations_name = "sandbox"
 }
 
-module "storage1" {
+module "storage2" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
-    AccountEmail              = "tadeuszkleszcz+storage1@gmail.com"
-    AccountName               = "storage1"
+    AccountEmail              = "tadeuszkleszcz+storage2@gmail.com"
+    AccountName               = "storage2"
     ManagedOrganizationalUnit = "Learn AFT"
-    SSOUserEmail              = "tadeuszkleszcz+storage1@gmail.com"
-    SSOUserFirstName          = "storage1"
+    SSOUserEmail              = "tadeuszkleszcz+storage2@gmail.com"
+    SSOUserFirstName          = "storage2"
     SSOUserLastName           = "AFT"
   }
 
@@ -85,15 +56,15 @@ module "storage1" {
   account_customizations_name = "storage"
 }
 
-module "atlantis1" {
+module "atlantis2" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
-    AccountEmail              = "tadeuszkleszcz+atlantis1@gmail.com"
-    AccountName               = "atlantis1"
+    AccountEmail              = "tadeuszkleszcz+atlantis2@gmail.com"
+    AccountName               = "atlantis2"
     ManagedOrganizationalUnit = "Learn AFT"
-    SSOUserEmail              = "tadeuszkleszcz+atlantis1@gmail.com"
-    SSOUserFirstName          = "atlantis1"
+    SSOUserEmail              = "tadeuszkleszcz+atlantis2@gmail.com"
+    SSOUserFirstName          = "atlantis2"
     SSOUserLastName           = "AFT"
   }
 
