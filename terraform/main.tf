@@ -1,13 +1,13 @@
-module "storage01" {
+module "StorageDemo01" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
-    AccountEmail              = "tadeuszkleszcz+storage01@gmail.com"
-    AccountName               = "storage01"
-    ManagedOrganizationalUnit = "Learn AFT"
-    SSOUserEmail              = "tadeuszkleszcz+storage01@gmail.com"
-    SSOUserFirstName          = "storage01"
-    SSOUserLastName           = "AFT"
+    AccountEmail              = "tadeuszkleszcz+StorageDemo01@gmail.com"
+    AccountName               = "StorageDemo01"
+    ManagedOrganizationalUnit = "AFT Demo"
+    SSOUserEmail              = "tadeuszkleszcz+StorageDemo01@gmail.com"
+    SSOUserFirstName          = "Storage"
+    SSOUserLastName           = "Demo 01"
   }
 
   account_tags = {
